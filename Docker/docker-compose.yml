@@ -5,7 +5,7 @@ services:
     image: mysql:5.7
     container_name: db
     volumes:
-      - ./mysql:/var/lib/mysql
+      - ~/Docker-vol/mysql:/var/lib/mysql
     restart: always
     env_file:
       - ./env/db.env
