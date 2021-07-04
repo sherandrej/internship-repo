@@ -8,7 +8,7 @@ deploying:
    - sudo git pull origin
    #- git checkouut dev
    - cd "internship-repo/Docker"
-   #- ls
+  # - ls
    - sudo docker-compose -f "internship-repo/Docker/docker-compose.yml" up -d
    - echo "Deployed"
 #   - docker-compose up -d
