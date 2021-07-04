@@ -6,8 +6,8 @@ deploying:
  stage: deploy
  script:
    - sudo git clone http://gitlab.example.com/root/internship-repo.git
-   - cd "internship-repo"
-   - git checkouut dev
+  # - cd "internship-repo"
+  # - git checkouut dev
   # - sudo git pull origin
   # - ls
    - sudo docker-compose -f "internship-repo/Docker/docker-compose.yml" up -d
