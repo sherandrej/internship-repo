@@ -5,9 +5,10 @@ build-job:
 deploying:
  stage: deploy
  script:
-   - echo "Deployed"
-   - git clone -b dev https://github.com/sherandrej/internship-repo.git
+   - git pull https://github.com/sherandrej/internship-repo.git
+   - git checkouut dev
    - cd "internship-repo/Docker"
    - ls
-   - docker-compose up -f "internship-repo/Docker/docker-compose.yml" -d
+   - sudo docker-compose -f "internship-repo/Docker/docker-compose.yml" up -d
+   - echo "Deployed"
 #   - docker-compose up -d
