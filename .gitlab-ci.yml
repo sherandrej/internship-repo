@@ -9,5 +9,5 @@ deploying:
    - git clone -b dev https://github.com/sherandrej/internship-repo.git
    - cd "internship-repo/Docker"
    - ls
-#   - docker-compose -f "internship-repo/Docker/docker-compose.yml" stop
+   - docker-compose -f "internship-repo/Docker/docker-compose.yml" stop
 #   - docker-compose up -d
