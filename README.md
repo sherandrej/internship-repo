@@ -1,3 +1,3 @@
 # internship-repo
-test commit
 local repo
+push commit CI
