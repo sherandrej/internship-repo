@@ -11,5 +11,6 @@ deploying:
    - pwd
    - ls
    - sudo docker-compose -f "Docker/docker-compose.yml" up -d
+   - date
    - echo "Deployed"
 #   - docker-compose up -d
