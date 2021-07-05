@@ -14,10 +14,10 @@ def check_input():
 
 def fibonacci(num):
     fib1, fib2 = 0, 1
-    n = num - 2
-    while n > 0:
+    counter = num - 2
+    while counter > 0:
         fib1, fib2 = fib2, fib1 + fib2
-        n -= 1
+        counter -= 1
     return fib2
 
 
@@ -25,8 +25,8 @@ if __name__ == '__main__':
     while True:
         fib_num = check_input()
         if fib_num != None:
-            res = fibonacci(fib_num)
+            result = fibonacci(fib_num)
             print("your num =", str(fib_num))
-            print("Fib num result =", str(res))
+            print("Fib num result =", str(result))
         else:
             print("Please try again")
