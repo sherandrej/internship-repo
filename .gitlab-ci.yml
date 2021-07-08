@@ -1,0 +1,16 @@
+build-job:
+ stage: build
+ script:
+   - echo "Hello, $GITLAB_USER_LOGIN!"
+deploying:
+ stage: deploy
+ script:
+  # - cd "internship-repo"
+  # - git checkouut dev
+  # - sudo git pull origin
+   - pwd
+   - ls
+   - sudo docker-compose -f "Docker/docker-compose.yml" up -d
+   - date
+   - echo "Deployed"
+#   - docker-compose up -d

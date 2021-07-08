@@ -1,0 +1,10 @@
+version: "3.3"
+    
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: webserver
+    ports:
+      - 90:80
+    volumes:
+      - ./nginx:/etc/nginx/
